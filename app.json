@@ -1,0 +1,52 @@
+{
+  "name": "Moodle Uploader",
+  "description": "Con este Bot se puede subir contenido desde internet hacia el almamcenamiento de Moolde",
+  "website": "https://github.com/ tu repositorio",
+  "repository": "https://github.com/ tu repositorio",
+  "stack": "heroku-20",
+  "env": {
+    "API_ID": {
+      "description": "Obten este valor https://my.telegram.org/apps",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Obten este valor https://my.telegram.org/apps",
+      "value": ""
+    },
+    "TOKEN": {
+      "description": "Token del bot que vas a utilizar",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "ID de los usuarios autorizados separados por un espacio",
+      "value": "1935578948"
+    },
+    "SERVER": {
+      "description": "Direccion principal del servidor",
+      "value": ""
+    },
+    "USER": {
+      "description": "Usuario del servidor donde se subira el contenido",
+      "value": ""
+    },
+    "PASSWORD": {
+      "description": "Contraseña del servidor donde se subira el contenido",
+      "value": ""
+    },
+    "REPOID": {
+      "description": "Repositorio de la pagina",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
